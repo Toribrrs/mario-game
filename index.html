@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Jump </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="game-board">
+
+        <div class="hud">
+            <div class="score-box">
+                <span class="label">Score:</span>
+                <span id="score" class="score-value">0</span>
+            </div>
+            <div class="divider"></div>
+            <div class="score-box">
+                <span class="label">Recorde:</span>
+                <span id="highScore" class="record-value">0</span>
+                <span id="new-record">NOVO!</span>
+            </div>
+        </div>
+
+        <div class="game-over-screen" id="gameOver">
+            <h1>Game Over! </h1>
+            <p>Pressione <strong>Espaço</strong> para jogar novamente</p>
+        </div>        
+
+        <img src="./images/clouds.png" class="clouds">
+        <img src="./images/mario.gif" class="mario">
+        <img src="./images/pipe.png" class="pipe">
+
+    </div>
+</body>
+</html>
