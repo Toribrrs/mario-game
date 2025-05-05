@@ -6,7 +6,6 @@ const highScoreElement = document.getElementById('highScore');
 let highScore = localStorage.getItem('highScore') || 0;
 highScoreElement.textContent = highScore;
 
-
 let score = 0;
 let isGameOver = false;
 let pipeSpeed = 2000; 
