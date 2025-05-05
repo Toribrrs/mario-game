@@ -1,25 +1,22 @@
-// Elementos do DOM
 const pipe = document.querySelector('.pipe');
 const mario = document.querySelector('.mario');
 const scoreElement = document.getElementById('score');
 const highScoreElement = document.getElementById('highScore');
 
-// Obtém o recorde salvo no navegador, ou 0 se não houver
 let highScore = localStorage.getItem('highScore') || 0;
 highScoreElement.textContent = highScore;
 
 
-// Estado do jogo
 let score = 0;
 let isGameOver = false;
-let pipeSpeed = 2000; // Tempo inicial da animação do pipe (ms)
+let pipeSpeed = 2000; 
 
 // Atualiza a animação do pipe com a velocidade atual
 const updatePipeAnimation = () => {
     pipe.style.animation = `pipe-animation ${pipeSpeed}ms infinite linear`;
 };
 
-// Executa o pulo do Mario
+
 const jump = () => {
     if (!mario.classList.contains('jump')) {
         mario.classList.add('jump');
